@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <title>CV</title>
+        <script src="https://kit.fontawesome.com/b122c3236d.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="">CV</a></li>
+            </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>CV</h1>
+            <p>Welcome to my "CV" page. Here you can take a look at my past work experiences.</p>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+          navLinks.style.right = "0";
+        }
+    
+        function hideMenu(){
+          navLinks.style.right = "-200px";
+        }
+      </script>
+    </body>
+
+</html>

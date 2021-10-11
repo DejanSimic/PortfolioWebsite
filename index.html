@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>Dejan Simic</title>
+    <script src="https://kit.fontawesome.com/b122c3236d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/Logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="aboutme.html">ABOUT ME</a></li>
+          <li><a href="cv.html">CV</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  <div class="text-box">
+    <h1>Welcome to my site!</h1>
+    <p>Hello! I'm glad you've chosen to have a look on my site. <br>This is my first website, so I hope it turned out great!</p>
+    <a href="" class="hero-btn">Contact me</a>
+  </div>
+  </section>
+
+  <!---- About Me -->
+
+  <section class="AboutMe">
+    <h1>Get to know more about me</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+      <div class="AboutMe-col">
+        <h3>Programming</h3>
+        <p>I've always wondered how certain thing are build. So when I got my first laptop my first instinct was to find out how things were build. This cooled down a bit in my teen years but as soon as my high school had ended I had a lot a spare time to figure out what to do with my life. So in the month August of the year 2020 I started a study about programming. In the first year I've learn the basics of programming and problem solving. I'm now in my second year and I've been experimenting. I soon found out that web development, more specificly, frontend web development was something I wanted to learn. So with that in mind I am now at the beginning of my journey of becoming a frontend web developer.</p>
+      </div>
+      <div class="AboutMe-col">
+        <h3>Gaming</h3>
+        <p>When my brother got his first laptop he introduced me to a game called League of Legends. I immediatly fell in love with the game. I already had some gaming experience prior to this, but those were all singleplayer games. So when I got my first laptop in high school the first thing I did was download the game League of Legends. Since then I've played plenty of games and to this day I still love gaming as much as I did back in the day.</p>
+      </div>
+      <div class="AboutMe-col">
+        <h3>Goals</h3>
+        <p>My goals for this year are to pass all of my exams of the first year of my study and become involved in the corporate world of programming.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ContactMe">
+    <h1>Contact Me</h1>
+    <p>Email: 1005271@hr.nl</p> 
+  </section>
+
+
+  <!------JavaScript for Menu Toggle------->
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+  </body>
+</html>
